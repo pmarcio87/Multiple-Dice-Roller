@@ -17,7 +17,7 @@ def menu():
     n_dice = int(input('How many will you roll?: '))
     print('')
 
-    n=1                                                         #Variable for printing
+    n=1                                                         #Variable for printing the result
     for i in range(n_dice):                                     #Iterating over the number of dice rolled
         print('The result for dice '+str(n)+' is: '+str(roll(sides)))
         print('')
@@ -31,7 +31,7 @@ def roll(sides):
 
 def repeat():
     repeat = input('Roll again? (Y/N): ')
-    if repeat.lower() == 'y':
+    if repeat.lower() == 'y'or repeat.lower() == 'yes':
         print('_________________________________________________________________________')
         menu()
 
